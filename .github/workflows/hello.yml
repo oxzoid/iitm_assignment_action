@@ -1,0 +1,16 @@
+name: oxzoid's Assignment Action  # Optional: Just a label
+
+on: [push]  # Triggers on any push to any branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Free GitHub robot (runner) like a virtual Linux computer
+    steps:
+      - name: Checkout code  # Grabs your repo files
+        uses: actions/checkout@v4  # Reusable GitHub tool (action)
+
+      - name: 24f1002007@ds.study.iitm.ac.in  # REQUIRED: Your email in step name
+        run: echo "Hello from oxzoid's GitHub Action!"  # Simple command
+
+      - name: List files  # Extra fun step to prove it works
+        run: ls -la
